@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 12:47:27 by snovaes           #+#    #+#             */
-/*   Updated: 2021/11/15 02:51:14 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/11/15 03:06:29 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,6 +157,18 @@ Node* to_remove(List *list, int num)
 	return remove;
 }
 
+Node* search(List *list, int num)
+{
+	Node *aux, *node = NULL;
+
+	aux = list->begin;
+	while (aux && aux->value != num)
+		aux = aux->next;
+	if (aux)
+		node = aux;
+	return (node);
+}
+
 void printList(List list)
 {
 	Node *node = list.begin;
@@ -178,7 +190,7 @@ int main()
 	create_list(&list);
 	
 	do{
-		printf("\n\t0 - Sair\n\t1 - InserirInicio\n\t2 - inserirFim\n\t3 - InserirMeio\n\t4 - InserirOrdenado\n\t5 - Remover\n\t6 - Imprimir\n\t");
+		printf("\n\t0 - Sair\n\t1 - InserirInicio\n\t2 - inserirFim\n\t3 - InserirMeio\n\t4 - InserirOrdenado\n\t5 - Remover\n\t6 - Imprimir\n\t7 - Buscar\n\t");
 		scanf("%d", &option);
 		switch (option){
 			case 1:
@@ -215,6 +227,15 @@ int main()
 					break;
 			case 6:
 				printList(list);
+				break;
+			case 7:
+				printf("Digite um valor a ser buscado: ");
+				scanf("%d", &value);
+				removed = search(&list, value);
+				if (removed)
+					printf("Elemento encontrado: %d\n", removed->value);
+				else
+					printf("Não encontrado!");
 				break;
 			default:
 				if (option != 0)
