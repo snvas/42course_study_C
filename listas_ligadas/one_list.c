@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 12:47:27 by snovaes           #+#    #+#             */
-/*   Updated: 2021/11/15 03:06:29 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/11/19 17:23:02 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -188,7 +188,6 @@ int main()
 	List list;
 
 	create_list(&list);
-	
 	do{
 		printf("\n\t0 - Sair\n\t1 - InserirInicio\n\t2 - inserirFim\n\t3 - InserirMeio\n\t4 - InserirOrdenado\n\t5 - Remover\n\t6 - Imprimir\n\t7 - Buscar\n\t");
 		scanf("%d", &option);
@@ -241,7 +240,6 @@ int main()
 				if (option != 0)
 					printf("Opcao Inválida!\n");
 			}	
-		}while (option != 0);
-	
-		return 0;
+		}while (option != 0);	
+		return (0);
 }
