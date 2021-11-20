@@ -53,7 +53,7 @@ int	main(void)
 		case 12:
 			printf("\nDezembro\n");
 			break;
+		default:
+			printf("\nValor não corresponde a nunhum mês!\n");
 	}
-
-
 }
