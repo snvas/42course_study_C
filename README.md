@@ -6,6 +6,10 @@
 
 ## Estruturas de Repetição
 
+## Estruturas de Dados Homogêneas
+
+## Funções e Procedimentos
+
 ## Listas Ligadas
 
 ### Lista Duplamente Ligada
