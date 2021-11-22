@@ -10,6 +10,8 @@
 
 ## Funções e Procedimentos
 
+### Variáveis Globais e Locais
+
 ## Listas Ligadas
 
 ### Lista Duplamente Ligada
