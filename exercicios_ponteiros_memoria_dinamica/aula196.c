@@ -1,4 +1,4 @@
-/*Implemente a função strcpy (char *destino, char *origem) usando ponteiros.*/
+/*Aula 196: Implemente a função strcpy (char *destino, char *origem) usando ponteiros.*/
 
 #include <stdio.h>
 #include <stdlib.h>
