@@ -1,6 +1,10 @@
 /******************
- * Como imprimir um triângulo com espaços à esquerda?
- * 
+ * Como imprimir um triângulo com espaços à esquerda? N vezes
+ * 	|	    *
+ * 	|	   **
+ * 	|	  ***
+ * 	|	 ****
+ * 	|	*****
  */
 
 #include <stdio.h>
